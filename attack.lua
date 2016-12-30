@@ -4,7 +4,7 @@ local f = CreateFrame'Frame'
 f:RegisterEvent'PLAYER_ENTER_COMBAT'
 f:RegisterEvent'PLAYER_LEAVE_COMBAT'
 f:SetScript('OnEvent', function()
-	shooting = event == 'PLAYER_ENTER_COMBAT'
+	attacking = event == 'PLAYER_ENTER_COMBAT'
 end)
 
 SLASH_ATTACK1 = '/attack'
