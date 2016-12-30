@@ -18,9 +18,9 @@ f:SetScript('OnUpdate', function()
 	f:SetScript('OnUpdate', nil)
 	for i = 1, GetNumMacros() do
 		if GetMacroInfo(i) == 'attack' then
-			EditMacro(i, 'attack', 43, '/attack', 1)
+			EditMacro(i, 'attack', 140, '/attack', 1)
 			return
 		end
 	end
-	CreateMacro('attack', 43, '/attack', 1)
+	CreateMacro('attack', 140, '/attack', 1)
 end)
